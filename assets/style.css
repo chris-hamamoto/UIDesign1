@@ -6,14 +6,46 @@
 
 /* adjusting fonts */
 
-body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
+@font-face {
+  font-family: "Fragment Mono";
+  src: url("FragmentMono-Regular.ttf");
 }
 
-p, li {
-	font-size:  22px;
-	line-height: 30px;
+@font-face {
+  font-family: "Fragment Mono";
+  src: url("FragmentMono-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ouvrieres";
+  src: url("Ouvrieres-rassasiees.woff2");
+}
+
+@font-face {
+  font-family: "Danfo";
+  src: url("Danfo-Regular-VariableFont_ELSH.ttf");
+}
+
+
+body {
+	font-family: "Fragment Mono", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	transition: background 500ms ease;
+	color: red;
+}
+
+body.dark {
+  background: #333;
+}
+
+h1, h2, p, li {
+	font-size:  16px;
+	line-height: 22px;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 28px;
 }
 
 /* adjusting spacing */
@@ -22,7 +54,7 @@ p, li {
 	padding: 20px;
 }
 
-h1, p {
+h1, p, ul, ol {
 	margin-bottom:  20px;
 }
 
@@ -35,26 +67,6 @@ img {
 	height:  auto;
 }
 
-/* uncomment the code below to set the grid */
-
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+pre {
+	padding: 20px;
 }
-
-body {
-	overflow: hidden;
-}
-
-.scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
-}
-
-#left-column {
-}
-
-#right-column {
-	background: #333;
-}*/

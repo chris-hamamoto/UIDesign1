@@ -1,0 +1,111 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+	transition: 500ms ease all;
+}
+
+#triangle:hover {
+	transform: rotate(45deg) scale(20);
+}
+
+#square {
+	width: 150px;
+	height: 150px;
+	background: red;
+	top: 203px;
+	right: 0px;
+	position: absolute;
+
+	box-shadow: 0px 0px 10px rgba(0,0,0,.25);
+
+	/* uncomment to add keyframe animation */
+	 animation: spin 2s infinite; 
+
+}
+
+#circle {
+	width: 150px;
+	height: 150px;
+	background: blue;
+	border-radius: 150px;
+	top: 203px;
+	left: 480px;
+	position: absolute;
+
+	transition: all 500ms ease;
+
+	mix-blend-mode: multiply;
+}
+
+#circle:hover {
+	border-radius: 0px;
+	background: orange;
+	transform: rotate(45deg);
+}
+
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+/*	 transition: all 400ms ease; */
+}
+
+/* animations */
+
+
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% { 
+  	transform: rotate(180deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
