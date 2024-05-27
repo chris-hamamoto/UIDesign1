@@ -30,12 +30,49 @@
 
 body {
 	font-family: "Fragment Mono", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
+	transition: background-color 500ms ease;
 	color: red;
 }
 
+body a {
+	color: blue;
+}
+
+
+#darkmode {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 4px 8px;
+	font-size: 22px;
+	border-radius: 100%;
+	background: brown;
+	box-shadow: 0px 0px 0px #000;
+
+	transition: all 400ms ease;
+	cursor: pointer;
+}
+
+#darkmode:hover {
+	transform: translateY(-3px);
+	box-shadow: 0px 2px 3px #000;
+}
+
 body.dark {
-  background: #333;
+  background-color: #222;
+  background-image: url('cat-bus.jpg');
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fafafa;
+}
+
+body.dark #darkmode {
+	color: blue;
+}
+
+body.dark a {
+	color: yellow;
 }
 
 h1, h2, p, li {
