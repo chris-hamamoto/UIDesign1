@@ -31,7 +31,7 @@
 body {
 	font-family: "Fragment Mono", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background-color 500ms ease;
-	color: red;
+	color: purple;
 }
 
 body a {
@@ -60,10 +60,11 @@ body a {
 
 body.dark {
   background-color: #222;
-  background-image: url('cat-bus.jpg');
+  background-image: url('cat-bus.jpg') !important;
   min-height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 640px 360px !important;
   color: #fafafa;
 }
 
@@ -73,6 +74,21 @@ body.dark #darkmode {
 
 body.dark a {
 	color: yellow;
+}
+
+body.day {
+	min-height: 100vh;
+	background: radial-gradient(circle at center calc(100vh), rgba(70,255,255,1) 5%, rgba(255,255,120,1) 80%);
+/*	background-image: url('ladybug.gif');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom left;*/
+}
+
+#clock {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
 }
 
 h1, h2, p, li {
@@ -107,3 +123,81 @@ img {
 pre {
 	padding: 20px;
 }
+
+#pokemon img {
+	max-width: 80px;
+	height: auto;
+}
+
+#phone-message {
+	display: none;
+}
+
+#pokemon img#phone, #pokemon img#tablet {
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+	#pokemon img#phone, #pokemon img#desktop {
+		display: none;
+	}
+
+	#pokemon img#tablet {
+		display: block;
+	}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	#pokemon img#tablet, #pokemon img#desktop {
+		display: none;
+	}
+
+	#pokemon img#phone {
+		display: block;
+	}
+
+	#phone-message {
+		display: block;
+	}
+
+}
+
+#print {
+	display: none;
+}
+
+@media print {
+	body {
+		color: orange;
+	}
+
+#print {
+	display: block;
+}
+
+}
+
+
+
+
+/*#pokemon img#phone, #pokemon img#tablet  {
+	display: none;
+}
+
+@media only screen and (max-width: 812px) { 
+
+	#pokemon img#tablet  {
+		display: block;
+	}
+
+	#pokemon img#desktop, #pokemon img#phone  {
+		display: none;
+	}
+}
+*/

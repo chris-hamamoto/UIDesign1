@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <style>
     body {
-     
+
     }
 
     #container {
@@ -39,7 +39,8 @@
       perspective: 100000;
       width: 540px;
       height: 640px;
-      background-color: black;
+      background-color: pink;
+      border: 2px solid black;
       background-image: url('yp-front.png');
       background-size: 1080px 1920px;
       background-position: top left;
@@ -48,95 +49,97 @@
 
 
     .rotate-3 {
-      transform: rotate3d(1, 1.2, -1, 0deg);
-      animation: rotateAnimation-3 300s linear infinite;
-      background-position: 0px -640px;      
-    }
-
-    .rotate-4 {
-      transform: rotate3d(.1, .2, -.2, 0deg);
-      animation: rotateAnimation-1 300s linear infinite;
-      background-position: -540px -640px;
-    }
-
-    .rotate-5 {
       transform: rotate3d(-1, -.2, 2, 0deg);
-      animation: rotateAnimation-2 300s linear infinite;  
-      background-position: -0px -1280px;    
-    }
+/*      animation: rotateAnimation-3 300s linear infinite;*/
+background-position: 0px -640px;      
+}
 
-    .rotate-6 {
-      transform: rotate3d(0, 1, .5, 0deg);
-      animation: rotateAnimation-3 300s linear infinite;      
-      background-position: -540px -1280px;
-    }
+.rotate-4 {
+  transform: rotate3d(-1, -.2, 2, 0deg);
+/*      animation: rotateAnimation-1 300s linear infinite;*/
+background-position: -540px -640px;
+}
 
-    .rotate-1 {
-      animation: rotateAnimation-1 10s linear infinite;      
-    }
+.rotate-5 {
+  transform: rotate3d(-1, -.2, 2, 0deg);
+/*      animation: rotateAnimation-2 300s linear infinite;  */
+background-position: -0px -1280px;    
+}
 
-    @keyframes rotateAnimation-1 {
-      from {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-      }
-      to {
-        transform: rotateX(-5deg) rotateY(30deg) rotateZ(20deg);
-      }
-    }
+.rotate-6 {
+  transform: rotate3d(-1, -.2, 2, 0deg);
+/*      animation: rotateAnimation-3 300s linear infinite;      */
+background-position: -540px -1280px;
+}
 
-    .rotate-2 {
-      perspective: 10100000;
-      transform: rotate3d(1, 2, 0, 0deg);
-      animation: rotateAnimation-2 3s linear infinite;      
-      background-position: -540px 0px;
-    }    
+.rotate-1 {
+  transform: rotate3d(-1, -.2, 2, 0deg);
+/*      animation: rotateAnimation-1 300s linear infinite;      */
+}
 
-    @keyframes rotateAnimation-2 {
-      from {
-        transform: rotate3d(.5, .1, 0, 0deg) scale(1);
-      }
-      to {
-        transform: rotate3d(.5, .4, 0, 360deg) scale(1);
-      }
-    }
+@keyframes rotateAnimation-1 {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(-5deg) rotateY(30deg) rotateZ(20deg);
+  }
+}
 
-    @keyframes rotateAnimation-3 {
-      from {
-        transform: rotate3d(0, 0.2, -1, 0deg);
-      }
-      to {
-        transform: rotate3d(0, 1, -1, 360deg);
-      }
-    }
+.rotate-2 {
+  perspective: 10100000;
+  transform: rotate3d(1, 2, 0, 0deg);
+/*      animation: rotateAnimation-2 300s linear infinite;      */
+background-position: -540px 0px;
+}    
 
-    @keyframes rotateAnimation-4 {
-      from {
-        transform: rotate3d(.1, .2, -.2, 0deg);
-      }
-      to {
-        transform: rotate3d(.1, .2, -.2, 360deg);
-      }
-    }    
+@keyframes rotateAnimation-2 {
+  from {
+    transform: rotate3d(.5, .1, 0, 0deg) scale(1);
+  }
+  to {
+    transform: rotate3d(.5, .4, 0, 360deg) scale(1);
+  }
+}
 
-    @keyframes rotateAnimation-5 {
-      from {
-        transform: rotate3d(-1, -.2, 2, 0deg);
-      }
-      to {
-        transform: rotate3d(-1, -.2, 2, 360deg);
-      }
-    }        
+@keyframes rotateAnimation-3 {
+  from {
+    transform: rotate3d(0, 0.2, -1, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, -1, 360deg);
+  }
+}
 
-    @keyframes rotateAnimation-6 {
-      from {
-        transform: rotate3d(0, 1, .5, 0deg);
-      }
-      to {
-        transform: rotate3d(0, 1, .5, 360deg);
-      }
-    }        
+@keyframes rotateAnimation-4 {
+  from {
+    transform: rotate3d(.1, .2, -.2, 0deg);
+  }
+  to {
+    transform: rotate3d(.1, .2, -.2, 360deg);
+  }
+}    
 
-  </style>
+@keyframes rotateAnimation-5 {
+  from {
+    transform: rotate3d(-1, -.2, 2, 0deg);
+  }
+  to {
+    transform: rotate3d(-1, -.2, 2, 360deg);
+  }
+}        
+
+@keyframes rotateAnimation-6 {
+  from {
+    transform: rotate3d(0, 1, .5, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, .5, 360deg);
+  }
+}        
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.9.0/html-to-image.min.js"></script>
 </head>
 
 <body>
@@ -162,6 +165,25 @@
       </div>
     </div>
   </div>
+<button onclick="downloadAsSVG()">Download as SVG</button>
 
+    <script>
+        function downloadAsSVG() {
+            var node = document.getElementById('grid');
+
+            htmlToImage.toSvg(node)
+                .then(function (dataUrl) {
+                    var link = document.createElement('a');
+                    link.href = dataUrl;
+                    link.download = 'content.svg';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(function (error) {
+                    console.error('Oops, something went wrong!', error);
+                });
+        }
+    </script>
 </body>
 </html>

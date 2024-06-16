@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save JSON to File</title>
+</head>
+<body>
+    <h1>Save JSON to File</h1>
+    <textarea id="jsonInput" rows="10" cols="50" placeholder="Enter JSON data here"></textarea><br><br>
+    <button onclick="saveJson()">Save JSON to File</button>
+
+    <script>
+        function saveJson() {
+            // Get the JSON data from the text area
+            const jsonData = document.getElementById('jsonInput').value;
+            
+            try {
+                // Parse the JSON to ensure it's valid
+                const jsonObject = JSON.parse(jsonData);
+
+                // Convert JSON object to string
+                const jsonString = JSON.stringify(jsonObject, null, 2);
+
+                // Create a Blob with the JSON data
+                const blob = new Blob([jsonString], { type: "application/json" });
+
+                // Create a link element
+                const link = document.createElement("a");
+
+                // Set the download attribute with a filename
+                link.download = "data.json";
+
+                // Create a URL for the Blob and set it as the href attribute
+                link.href = window.URL.createObjectURL(blob);
+
+                // Append the link to the body (required for Firefox)
+                document.body.appendChild(link);
+
+                // Programmatically click the link to trigger the download
+                link.click();
+
+                // Remove the link from the document
+                document.body.removeChild(link);
+            } catch (error) {
+                alert("Invalid JSON data");
+            }
+        }
+    </script>
+</body>
+</html>
