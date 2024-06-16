@@ -32,7 +32,6 @@ body {
 	font-family: "Fragment Mono", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background-color 500ms ease;
 	color: black;
-	background: linear-gradient(210deg, rgba(162,162,162,1) 0%, rgba(255,255,255,1) 33%);
 }
 
 body a {
@@ -62,13 +61,12 @@ body a {
 }
 
 body.dark {
-  background-color: #222;	
-  background: linear-gradient(210deg, rgba(115,104,27,1) 0%, rgba(34,34,34,1) 33%);  
-/*  background-image: url('cat-bus.jpg') !important;*/
+  background-color: #222;
+  background-image: url('cat-bus.jpg') !important;
   min-height: 100vh;
-/*  background-position: center center !important;
+  background-position: center center !important;
   background-repeat: no-repeat !important;
-  background-size: 640px 360px !important;*/
+  background-size: 640px 360px !important;
   color: #fafafa;
 }
 
