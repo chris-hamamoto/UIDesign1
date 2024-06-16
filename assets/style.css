@@ -31,11 +31,14 @@
 body {
 	font-family: "Fragment Mono", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background-color 500ms ease;
-	color: purple;
+	color: black;
+	background: linear-gradient(210deg, rgba(162,162,162,1) 0%, rgba(255,255,255,1) 33%);
 }
 
 body a {
-	color: blue;
+	color: black;
+	background-color: rgba(190,0,222,.2);
+	text-decoration: none;
 }
 
 
@@ -45,9 +48,9 @@ body a {
 	right: 10px;
 	padding: 4px 8px;
 	font-size: 22px;
-	border-radius: 100%;
+	/*border-radius: 100%;
 	background: brown;
-	box-shadow: 0px 0px 0px #000;
+	box-shadow: 0px 0px 0px #000;*/
 
 	transition: all 400ms ease;
 	cursor: pointer;
@@ -55,16 +58,17 @@ body a {
 
 #darkmode:hover {
 	transform: translateY(-3px);
-	box-shadow: 0px 2px 3px #000;
+/*	box-shadow: 0px 2px 3px #000;*/
 }
 
 body.dark {
-  background-color: #222;
-  background-image: url('cat-bus.jpg') !important;
+  background-color: #222;	
+  background: linear-gradient(210deg, rgba(115,104,27,1) 0%, rgba(34,34,34,1) 33%);  
+/*  background-image: url('cat-bus.jpg') !important;*/
   min-height: 100vh;
-  background-position: center center !important;
+/*  background-position: center center !important;
   background-repeat: no-repeat !important;
-  background-size: 640px 360px !important;
+  background-size: 640px 360px !important;*/
   color: #fafafa;
 }
 
@@ -73,22 +77,22 @@ body.dark #darkmode {
 }
 
 body.dark a {
+	background-color: rgba(255,255,255,.1);
 	color: yellow;
 }
 
 body.day {
 	min-height: 100vh;
-	background: radial-gradient(circle at center calc(100vh), rgba(70,255,255,1) 5%, rgba(255,255,120,1) 80%);
-/*	background-image: url('ladybug.gif');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: bottom left;*/
 }
 
 #clock {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
+}
+
+#grid {
+	padding-top: 100px;
 }
 
 h1, h2, p, li {
@@ -125,7 +129,7 @@ pre {
 }
 
 #pokemon img {
-	max-width: 80px;
+	max-width: 40px;
 	height: auto;
 }
 

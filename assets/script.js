@@ -3,10 +3,10 @@ document.querySelector('#darkmode').addEventListener('click', function() {
       document.getElementsByTagName('body')[0].classList.toggle('dark');
       if (modeSwitch.textContent === "🌞") {
             modeSwitch.textContent = "🌝";
-            modeSwitch.style.backgroundColor = 'black';
+            // modeSwitch.style.backgroundColor = 'black';
       } else {
             modeSwitch.textContent = "🌞";
-            modeSwitch.style.backgroundColor = 'brown';
+            // modeSwitch.style.backgroundColor = 'brown';
       }
 });
 
