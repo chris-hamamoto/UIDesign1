@@ -1,60 +1,74 @@
 * {
-	margin:  0px;
-	padding:  0px;
-	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
-/* adjusting fonts */
-
-body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
-}
-
-p, li {
-	font-size:  22px;
-	line-height: 30px;
-}
-
-/* adjusting spacing */
-
-#left-column {
+body{
+	font-family: cursive;
 	padding: 20px;
+	background: beige;
 }
 
-h1, p {
-	margin-bottom:  20px;
+/* type */
+
+h1, h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
+
+/* links */
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: purple;
+}
+
+/* lists */
 
 ul, ol {
-	margin-left: 20px;
+	margin: 20px;
 }
 
-img {
-	max-width: 100%;
-	height:  auto;
+/* table */
+
+table {
+	border-spacing: 0px;
 }
 
-/* uncomment the code below to set the grid */
-
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+th {
+	background: darkgoldenrod;
+	color: white;
 }
 
-body {
-	overflow: hidden;
+td {
+	background: white;
 }
 
-.scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
+th, td {
+	padding: 10px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
 }
 
-#left-column {
+th:last-child, td:last-child {
+	border-right: 1px solid black;
 }
 
-#right-column {
-	background: #333;
-}*/
+tr:last-child td {
+	border-bottom: 1px solid black;
+}
+
+td:hover {
+	background: yellow;
+}
+
+/* footer */
+
+footer {
+	display: block;
+	margin-top: 40px;
+}
