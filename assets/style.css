@@ -1,6 +1,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
 body{
@@ -11,9 +12,25 @@ body{
 
 /* type */
 
+h1 {
+	color: burlywood;
+}
+
 h1, h2 {
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+#personal-info {
+	background: rgba(0,255,0,.3);
+}
+
+
+
+#psyduck {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
 }
 
 /* links */
@@ -65,6 +82,14 @@ tr:last-child td {
 td:hover {
 	background: yellow;
 }
+
+/* psyduck image */
+
+#psyduck {
+	width: 100px;
+	height: auto;
+}
+
 
 /* footer */
 

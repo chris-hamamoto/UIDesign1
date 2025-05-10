@@ -1,0 +1,270 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+	background: linear-gradient(0deg,rgba(195, 34, 34, 1) 0%, rgba(255, 180, 180, 1) 100%);
+	overflow: hidden;
+}
+
+#ramen {
+	border-top: 180px solid red;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 100px;
+	top: 210px;
+	left: 280px;
+	position: absolute;
+	z-index: 1;	
+}
+
+#ramen-lid {
+	width: 154px;
+	height: 10px;
+	top: 206px;
+	left: 278px;
+	position: absolute;
+	background: grey;
+	border-radius: 100%;
+	transform: skewX(63deg);
+	z-index: 2;	
+}
+
+#ramen-bottom {
+	width: 98px;
+	height: 10px;
+	top: 384px;
+	left: 304px;
+	position: absolute;
+	background: red;
+	border: 2px solid grey;
+	border-radius: 100%;
+	z-index: 0;
+}
+
+#apple {
+	height: 90px;
+	width: 70px;
+	top: 310px;
+	left: 425px;
+	position: absolute;
+	background: #ff5722;
+	border-radius: 30px;
+	transform: skew(8deg, 0deg);
+	z-index: 100;
+}
+
+#apple2 {
+	height: 90px;
+	width: 70px;
+	top: 310px;
+	left: 450px;
+	position: absolute;
+	background: #ff5722;
+	border-radius: 30px;
+	transform: skew(-8deg, 0deg);
+	z-index: 100;
+}
+
+#chopstick {
+	width: 280px;
+	height: 4px;
+	transform: rotate(3deg) skew(-37deg);
+	background: silver;
+	position: absolute;
+	top: 208px;
+	left: 211px;
+	z-index: 5;
+	border-radius: 30px;
+	box-shadow: 0px 0px 3px black;
+}
+
+#chopstick2 {
+	width: 280px;
+	height: 4px;
+	transform: rotate(3deg) skew(-37deg);
+	background: silver;
+	position: absolute;
+	top: 204px;
+	left: 210px;
+	z-index: 4;
+	border-radius: 30px;
+	box-shadow: 0px 0px 3px black;	
+}
+
+#pocari-sweat {
+	width: 72px;
+	height: 220px;
+	background: blue;
+	left: 515px;
+	top: 166px;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+#pocari-sweat-lid {
+	width: 72px;
+	height: 3px;
+	background: rgb(200,200,200);
+	left: 515px;
+	top: 164px;
+	position: absolute;
+	border-radius: 10px;
+}
+
+#text {
+	text-transform: uppercase;
+	transform: rotate(90deg);
+	color: white;
+	letter-spacing: 15px;
+	font-family: helvetica;
+	width: 200px;
+	transform-origin: top left;
+	position: absolute;
+	top: 17px;
+	left: 14px;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+#text-hangul {
+	transform: rotate(90deg);
+	color: white;
+	font-family: helvetica;
+	width: 200px;
+	transform-origin: top left;
+	position: absolute;
+	top: 18px;
+	left: 79px;
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 5px;
+}
+
+#wave {
+	width: 120px;
+	height: 217px;
+	background: white;
+	clip-path: polygon(28% 100%, 26% 64%, 46% 23%, 48% 3%, 56% 31%, 45% 69%, 51% 100%);
+	position: absolute;
+	top: 3px;
+	left: -16px;
+}
+
+#mario {
+    width: 142px;
+    height: 260px;
+    left: 535px;
+    top: 116px;
+    position: absolute;
+    filter: blur(7px);
+}
+
+#head {
+	width: 152px;
+    height: 130px;
+    background: yellow;
+    left: -10px;
+    top: -14px;
+    position: absolute;
+    transform: rotate(0deg) scaleX(1);
+    border-radius: 100%;
+}
+
+#ear {
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    left: -9px;
+    top: 3px;
+    position: absolute;
+    transform: rotate(-9deg);
+    border-radius: 7px;
+}
+
+#ear2 {
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    left: 109px;
+    top: 3px;
+    position: absolute;
+    transform: rotate(9deg);
+    border-radius: 7px;
+}
+
+#body {
+    width: 152px;
+    height: 160px;
+    background: yellow;
+    left: 0px;
+    top: 110px;
+    position: absolute;
+    transform: rotate(0deg) scaleX(1);
+    border-radius: 100%;
+}
+
+#arm {
+    width: 150px;
+    height: 51px;
+    left: 48px;
+    top: 70px;
+    position: absolute;
+    transform: rotate(60deg) scaleX(1);
+    border-radius: 100%;
+    background: yellow;
+}
+#cup {
+	border-top: 93px solid #818181;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 62px;
+    left: 380px;
+    top: 293px;
+    position: absolute;
+    filter: blur(7px);    
+}
+
+#table {
+    width: 900px;
+    height: 80px;
+    background: #b7a77d;
+    left: 0px;
+    top: 353px;
+    position: absolute;
+}
+
+#table-edge {
+	width: 900px;
+    height: 30px;
+    background: #4f4d4d;
+    left: 0px;
+    top: 433px;
+    position: absolute;
+    box-shadow: 0px 17px 10px rgba(0,0,0,.6);
+}	
+
+#table-front {
+	width: 900px;
+    height: 100px;
+    background: #898980;
+    left: 0px;
+    top: 463px;
+    position: absolute;
+}
