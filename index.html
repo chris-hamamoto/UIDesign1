@@ -8,17 +8,23 @@
 </head>
 <body>
 
+  <button id="darkmode">
+    Dark Mode Toggle
+  </button>
+
   <!-- this is where my code is-->
   <div id="main-content">
     <div id="left-column" class="scroll">  
       <img src="assets/psyduck.png" alt="psyduck" id="psyduck" />
       <!-- about me-->
       <div id="personal-info">
-        <h1>Chris Hamamoto</h1>  
-        <p class="desc">is a <span>designer</span> and educator from California 🇺🇸 living in Seoul 🇰🇷</p>
+        <h1 id="name" class="en">Chris Hamamoto</h1>
+        <div id="text">
+          <p class="desc en">is a designer and educator from California 🇺🇸 living in Seoul 🇰🇷.</p>
+        </div>
         <ul>
-          <li>My favorite food is zaru soba</li>
-          <li>My favorite website is <a href="https://seoul.craigslist.org/">Craigslist</a></li>
+          <li class="en">My favorite food is zaru soba</li>
+          <li class="en">My favorite website is <a href="https://seoul.craigslist.org/">Craigslist</a></li>
         </ul>
       </div>
       <h2>chris' playlist for the week</h2>
@@ -58,5 +64,9 @@
     </div>
   </div>
   <footer>&copy; chris hamamoto, 2025</footer>
+
+  <script type="text/javascript" src="assets/script.js"></script>
+
+  
 </body>
 </html>

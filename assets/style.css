@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Fragment Mono";
+  src: url("FragmentMono-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fragment Mono";
+  src: url("FragmentMono-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Kablammo";
+  src: url("Kablammo-Regular-VariableFont_MORF.ttf");
+  font-style: italic;
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -5,20 +23,30 @@
 }
 
 body{
-	font-family: cursive;
+	font-family: sans-serif;	
 	padding: 20px;
 	background: beige;
 }
 
+.highlight {
+	font-size: 40px;
+	box-shadow: 0px 0px 10px red;
+	background: yellow;
+}
+
 /* type */
 
-h1 {
-	color: black;
+p {
 }
+
 
 h1, h2 {
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 14px;
 }
 
 #personal-info {
@@ -36,9 +64,11 @@ h1, h2 {
 a {
 	color: red;
 	text-decoration: none;
+	transition: 500ms all ease;
 }
 
 a:hover {
+/*	font-size: 20px;*/
 	color: purple;
 }
 
@@ -95,3 +125,32 @@ footer {
 	display: block;
 	margin-top: 40px;
 }
+
+body.dark {
+	background: #333;
+	color: white;
+}
+
+body.dark h2 {
+	color: red;
+}
+
+body {
+	transition: opacity 1500ms ease;
+}
+
+
+@media (max-width: 1250px) {
+  body {
+  	background: red;
+  	opacity: .5;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+  	background: orange;
+  	opacity: .15;
+  }
+}
+
