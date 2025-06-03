@@ -1,18 +1,12 @@
 @font-face {
   font-family: "Fragment Mono";
-  src: url("FragmentMono-Regular.ttf");
+  src: url("fonts/FragmentMono-Regular.ttf");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fragment Mono";
-  src: url("FragmentMono-Italic.ttf");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Kablammo";
-  src: url("Kablammo-Regular-VariableFont_MORF.ttf");
+  src: url("fonts/FragmentMono-Italic.ttf");
   font-style: italic;
 }
 
@@ -23,15 +17,17 @@
 }
 
 body{
-	font-family: sans-serif;	
+	font-family: "Fragment Mono", sans-serif;	
 	padding: 20px;
 	background: beige;
 }
 
-.highlight {
-	font-size: 40px;
-	box-shadow: 0px 0px 10px red;
-	background: yellow;
+/* dark mode button */
+
+button#darkmode {
+	position: fixed;
+	top: 20px;
+	right: 20px;
 }
 
 /* type */
@@ -39,8 +35,8 @@ body{
 p {
 }
 
-
 h1, h2 {
+	font-family: sans-serif;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
@@ -54,9 +50,6 @@ h2 {
 }
 
 #psyduck {
-	position: fixed;
-	right: 10px;
-	bottom: 20px;
 }
 
 /* links */
@@ -68,11 +61,15 @@ a {
 }
 
 a:hover {
-/*	font-size: 20px;*/
 	color: purple;
 }
 
 /* lists */
+
+p, ul, ol, footer {
+	font-size: 14px;
+	line-height: 18px;
+}
 
 ul, ol {
 	margin: 20px;
@@ -111,19 +108,14 @@ td:hover {
 	background: yellow;
 }
 
-/* psyduck image */
-
-#psyduck {
-	width: 100px;
-	height: auto;
-}
-
 
 /* footer */
 
 footer {
+	position: fixed;
 	display: block;
-	margin-top: 40px;
+	bottom: 20px;
+	left: 20px;
 }
 
 body.dark {
@@ -131,26 +123,55 @@ body.dark {
 	color: white;
 }
 
-body.dark h2 {
-	color: red;
+body.dark a {
+	color: yellow;
 }
 
 body {
-	transition: opacity 1500ms ease;
+	transition: 1000ms all ease;
 }
 
-
-@media (max-width: 1250px) {
-  body {
-  	background: red;
-  	opacity: .5;
-  }
+#applin {
+	width: 80px;
+	height: auto;
 }
 
-@media (max-width: 600px) {
-  body {
-  	background: orange;
-  	opacity: .15;
-  }
+#applin, #hydrapple {
+	display: none;
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+	#hydrapple {
+		display: inline-block;
+	}
+	#dipplin {
+		display: none;
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	#applin {
+		display: inline-block;
+	}
+	#dipplin {
+		display: none;
+	}
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body {
+		background: orange;
+	}
+}
+
+@media print {
+    h1, h2, body {
+    	font-family: serif;
+    }
+}
