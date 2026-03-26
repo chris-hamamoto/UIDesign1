@@ -4,26 +4,66 @@
 	box-sizing: border-box;
 }
 
+#favs {
+	/*text-shadow: 0px 0px 5px pink;*/
+}
+
 /* adjusting fonts */
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+	padding: 40px;
 }
 
-p, li {
-	font-size:  22px;
-	line-height: 30px;
+h1, h2, p, li {
+	font-size:  44px;
+	line-height: 60px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	/*text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 8px;
+	text-decoration-color: grey*/;
+}
+
+a:hover {
+	/*color: yellow;*/
+	text-decoration: none;
+}
+
+a:before {
+	content: '→';
+}
+
+
+a:hover:before {
+	content: '→';
+	padding-right: 4px;
+	color: black;
+}
+
+ul, p {
+	padding-bottom: 30px;
+}
+
+li {
+	color: black;
+}
+
+#fav-list li {
 }
 
 /* adjusting spacing */
 
-#left-column {
-	padding: 20px;
+/*#left-column {
 }
 
 h1, p {
-	margin-bottom:  20px;
+	margin-bottom:  40px;
 }
 
 ul, ol {
@@ -34,7 +74,7 @@ img {
 	max-width: 100%;
 	height:  auto;
 }
-
+*/
 /* uncomment the code below to set the grid */
 
 /*#grid {
