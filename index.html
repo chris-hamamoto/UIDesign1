@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
 
@@ -6,27 +5,19 @@
   <title>Chris Hamamoto | UI Design Programming 1</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="assets/style.css">
-
-  <!-- <style>
-      li {
-        color: red;
-        text-shadow: 0px 0px 10px brown;
-      }
-  </style> -->
 </head>
 
 <body>
 
 
   <!-- this is where my code is-->
-  <div id="grid">
-    <div id="left-column" class="scroll">  
-
+  <div id="flex">
+    <div id="left-column"  class="column">  
       <!-- my favorite pokemon -->
-      <!-- <img src="https://archives.bulbagarden.net/media/upload/2/24/Spr_2c_054.png" alt="Psyduck" /> -->
+      <img id="pokemon" src="https://archives.bulbagarden.net/media/upload/2/24/Spr_2c_054.png" alt="Psyduck" />
 
       <!-- about me-->
-      <h1><span class="cursive">C</span>hris Hamamoto</h1>
+      <h1>Christopher Hamamoto</h1>
       <p class="desc">I am a designer and teacher living in Seoul 🇰🇷, originally from California 🇺🇸</p>
       
       <h2 id="favs">My Favorite Things</h2>
@@ -36,14 +27,42 @@
         <li>My favorite song is <a href="https://www.youtube.com/watch?v=FSfi4h5f6Bk&list=RDFSfi4h5f6Bk&start_radio=1">Love Takes Miles, by Cameron Winter</a></li>
         <li>My favorite website is <a href="">Craigslist</a></li>
       </ul>
-
+    </div>
+    <div id="right-column" class="column">  
       <h2>Exercises</h2>
       
       <ul> 
         <li><a href="ascii/exterior-chrishamamoto.html">ASCII house</a></li>
       </ul>
 
+      <h2>Weekly Playlist</h2>
+      <div id="playlist">
+        <div id="day">
+          <div>일</div>
+          <div>월</div>
+          <div>화</div>
+          <div>수</div>
+          <div>목</div>
+          <div>금</div>
+          <div>토</div>
+        </div>
+        <div id="song">
+          <div><a href="https://www.youtube.com/watch?v=6e6Hj7MwWaI&list=RD6e6Hj7MwWaI&start_radio=1">☀️</a></div>
+          <div><a href="https://www.youtube.com/watch?v=w0Dtw2fD_r0&list=RDw0Dtw2fD_r0&start_radio=1">🌙</a></div>
+          <div><a href="">🔥</a></div>
+          <div><a href="">💧</a></div>
+          <div><a href="">🌳</a></div>
+          <div><a href="">💎</a></div>
+          <div><a href="">🪨</a></div>
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+    document.addEventListener("click", function () {
+      var hue = Math.floor(Math.random() * 360);
+      document.body.style.backgroundColor = "hsl(" + hue + ", 80%, 75%)";
+    });
+  </script>
 </body>
 </html>
