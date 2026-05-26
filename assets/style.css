@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Tilt Prism';
+  src: url('TiltPrism-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fragment Mono';
+  src: url('FragmentMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
 	margin:  0px;
 	padding:  0px;
@@ -11,9 +25,14 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: 'Fragment Mono', -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
 	padding: 40px;
+}
+
+body.dark {
+	background: black;
+	color: white;
 }
 
 body, h1, h2, p, li {
@@ -26,8 +45,35 @@ a {
 	text-decoration: underline;
 }
 
+
+body.dark a {
+	color: yellow;
+}
+
+
 h1 {
 }
+
+/* this is a comment in CSS */
+
+.tilt-prism {
+	font-size: 80px;
+	line-height: 80px;
+	margin-bottom: 20px;
+	font-family: "Tilt Prism", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "XROT" 0, "YROT" 0;
+
+	transition: all 1500ms ease;
+}
+
+.tilt-prism:hover {
+	font-variation-settings: "XROT" 20, "YROT" 20;
+}
+
+
 
 a:hover {
 	color: red;
@@ -81,6 +127,20 @@ img {
 	height:  auto;
 }
 
+#song div a {
+	display: block;
+	transform: rotate(45deg);
+	transition: all 500ms ease;
+}
+
+#song div a:after {
+	content: 'hello';
+}
+
+#song div a:hover:after {
+	content: 'bye';
+	transform: rotate(1145deg) scale(2);
+}
 
 /* grid */
 

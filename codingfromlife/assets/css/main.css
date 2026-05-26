@@ -1,0 +1,240 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: black;
+	position: relative;
+}
+
+#apple {
+	height: 110px;
+    width: 90px;
+    background: red;
+	background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,164,164,1) 54%, rgba(255,141,61,1) 100%);    
+    border-radius: 100%;
+    position: absolute;
+    bottom: 65px;
+    left: 182px;
+    filter: blur(3px);
+}
+
+
+#teapot {
+	height: 150px;
+	width: 110px;
+	background: darkgrey;
+	background: radial-gradient(circle, rgba(213,213,213,1) 0%, rgba(242,242,242,1) 54%, rgba(249,249,249,1) 100%);
+	border-radius: 26px;
+	position: absolute;
+	bottom: 50px;
+	left: 120px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.8);	
+}
+
+#teapot-top {
+	height: 14px;
+	width: 100px;
+	background: darkgrey;
+	background: radial-gradient(circle, rgba(144,144,144,1) 0%, rgba(255,255,255,1) 54%, rgba(236,236,236,1) 100%);	
+	border-radius: 5px 5px 26px 26px;
+	position: absolute;
+	bottom: 200px;
+	left: 125px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+#teapot-handle {
+	height: 140px;
+    width: 20px;
+    background: darkgrey;
+    background: radial-gradient(circle, rgba(144,144,144,.25) 0%, rgba(255,255,255,1) 54%, rgba(236,236,236,1) 100%);
+    border-radius: 6px;
+    position: absolute;
+    bottom: 73px;
+    left: 165px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+#teapot-circle {
+    height: 10px;
+    width: 10px;
+    background: lightgrey;
+	background: radial-gradient(circle, rgba(144,144,144,1) 0%, rgba(255,255,255,1) 54%, rgba(236,236,236,1) 100%);    
+    border-radius: 10px;
+    position: absolute;
+    bottom: 213px;
+    left: 170px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+#book-one {
+	height: 50px;
+	width: 210px;
+	background: darkgrey;
+	position: absolute;
+	bottom: 44px;
+	left: 280px;
+	transform: skewY(10deg);
+}
+
+#book-two {
+	height: 30px;
+	width: 180px;
+	background: lightgreen;
+	position: absolute;
+	bottom: 94px;
+	left: 320px;
+	transform: skewY(10deg);
+}
+
+#book-three {
+	height: 23px;
+	width: 130px;
+	background: beige;
+	position: absolute;
+	bottom: 132px;
+	left: 340px;
+	transform: skewY(10deg);
+}
+
+#book-one-edge {
+	height: 50px;
+	width: 268px;
+	background: #9a9a9a;
+	position: absolute;
+	bottom: 49px;
+	left: 490px;
+	transform: skewY(-10deg);
+}
+
+#book-two-edge {
+	height: 30px;
+	width: 270px;
+	background: #5fc75f;
+	position: absolute;
+	bottom: 103px;
+	left: 500px;
+	transform: skewY(-10deg);
+}
+
+#book-three-edge {
+	height: 23px;
+	width: 188px;
+	background: #d1d1b4;
+	position: absolute;
+	bottom: 136px;
+	left: 470px;
+	transform: skewY(-10deg);
+}
+
+#vase {
+	height: 73px;
+	width: 73px;
+	background: lightgrey;
+	position: absolute;
+	bottom: 164px;
+	left: 380px;
+	border-radius: 100%;
+}
+
+#vase-stem {
+	border-bottom: 10px solid #dbd5d5;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 20px;
+    position: absolute;
+    bottom: 232px;
+    left: 402px;
+    border-radius: 100%;
+}
+
+#stem {
+	width: 10px;
+	height: 120px;
+	background: green;
+	position: absolute;
+	bottom: 223px;
+	left: 411px;
+	border-radius: 100%;
+}
+
+#flower {
+	width: 80px;
+	height: 80px;
+	background: pink;
+	position: absolute;
+	bottom: 323px;
+	left: 401px;
+	border-radius: 100%;
+	filter: blur(3px);
+}
+
+#leaf {
+	width: 30px;
+	height: 56px;
+	background: green;
+	position: absolute;
+	bottom: 313px;
+	left: 421px;
+	border-radius: 30px / 50px;
+	transform: rotate(45deg);
+}
+
+#leaf-1 {
+	width: 20px;
+    height: 76px;
+    background: green;
+    position: absolute;
+    bottom: 299px;
+    left: 390px;
+    border-radius: 30px / 50px;
+    transform: rotate(-35deg);
+}
+
+#stem-2 {
+	width: 10px;
+    height: 225px;
+    background: green;
+    position: absolute;
+    bottom: 223px;
+    left: 403px;
+    border-radius: 100%;
+    transform: rotate(-5deg);	
+}
+
+#flower-2 {
+    width: 39px;
+    height: 34px;
+    background: GreenYellow;
+    position: absolute;
+    bottom: 433px;
+    left: 388px;
+    border-radius: 100%;
+    filter: blur(3px);
+    transform: rotate(144deg);
+}
+
+#banana {
+	position: absolute;
+	bottom: 133px;
+	left: 341px;
+	width: 110px;
+	height: 90px;
+	border-radius: 60%;
+	box-shadow: 25px 15px 0 0 yellow;
+	transform: rotate(-55deg) skewY(32deg);
+	filter: blur(2px);
+}
+

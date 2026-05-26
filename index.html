@@ -9,6 +9,9 @@
 
 <body>
 
+  <button id="darkmode">
+    Dark Mode Toggle
+  </button>
 
   <!-- this is where my code is-->
   <div id="flex">
@@ -17,7 +20,8 @@
       <img id="pokemon" src="https://archives.bulbagarden.net/media/upload/2/24/Spr_2c_054.png" alt="Psyduck" />
 
       <!-- about me-->
-      <h1>Christopher Hamamoto</h1>
+      <h1 class="tilt-prism" id="name">Christopher Hamamoto</h1>
+      <p>I am <span id="age"></span> years old</p>
       <p class="desc">I am a designer and teacher living in Seoul 🇰🇷, originally from California 🇺🇸</p>
       
       <h2 id="favs">My Favorite Things</h2>
@@ -34,7 +38,7 @@
       <ul> 
         <li><a href="ascii/exterior-chrishamamoto.html">ASCII house</a></li>
       </ul>
-
+      <!-- this is a comment -->
       <h2>Weekly Playlist</h2>
       <div id="playlist">
         <div id="day">
@@ -47,7 +51,8 @@
           <div>토</div>
         </div>
         <div id="song">
-          <div><a href="https://www.youtube.com/watch?v=6e6Hj7MwWaI&list=RD6e6Hj7MwWaI&start_radio=1">☀️</a></div>
+          <div>
+            <a href="https://www.youtube.com/watch?v=6e6Hj7MwWaI&list=RD6e6Hj7MwWaI&start_radio=1">☀️</a></div>
           <div><a href="https://www.youtube.com/watch?v=w0Dtw2fD_r0&list=RDw0Dtw2fD_r0&start_radio=1">🌙</a></div>
           <div><a href="">🔥</a></div>
           <div><a href="">💧</a></div>
@@ -58,11 +63,37 @@
       </div>
     </div>
   </div>
-  <script>
-    document.addEventListener("click", function () {
-      var hue = Math.floor(Math.random() * 360);
-      document.body.style.backgroundColor = "hsl(" + hue + ", 80%, 75%)";
+
+  <!-- script>
+    let name = "karel";
+    let age = 85;
+    const isStudent = false;
+    let counter = 0;
+    console.log(name, age, isStudent);
+
+    document.getElementById('name').addEventListener('click', function(){
+      document.getElementById('age').innerHTML = counter;
+      counter++;
+    })
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        alert('Enter key was pressed!');
+      }
+      console.log(event.key);
     });
-  </script>
+
+  </script -->
+
+  <script src="assets/script.js"></script>  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
