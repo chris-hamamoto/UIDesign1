@@ -133,15 +133,6 @@ img {
 	transition: all 500ms ease;
 }
 
-#song div a:after {
-	content: 'hello';
-}
-
-#song div a:hover:after {
-	content: 'bye';
-	transform: rotate(1145deg) scale(2);
-}
-
 /* grid */
 
 #flex {
